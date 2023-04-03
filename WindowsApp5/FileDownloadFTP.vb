@@ -7,6 +7,9 @@ Public Class FileDownloadFTP
 	Private _Login As String
 	Private _Haslo As String
 	Private _SavePath As String
+	Public CheckedFolderList As New List(Of String)
+
+
 
 
 	Public Sub New()
@@ -106,7 +109,7 @@ Public Class FileDownloadFTP
 							"Line: " & Err.Erl & vbCr, "Wystąpił bład",
 							MessageBoxButtons.OK, MessageBoxIcon.Error
 		)
-			End
+
 		End Try
 	End Function
 
@@ -158,7 +161,7 @@ Public Class FileDownloadFTP
 						"Line: " & Err.Erl & vbCr, "Wystąpił bład",
 						MessageBoxButtons.OK, MessageBoxIcon.Error
 	)
-		End
+
 		End Try
 
 	End Function
@@ -188,7 +191,7 @@ Public Class FileDownloadFTP
 					"Line: " & Err.Erl & vbCr, "Wystąpił bład",
 					MessageBoxButtons.OK, MessageBoxIcon.Error
 )
-			End
+
 		End Try
 	End Function
 
@@ -219,9 +222,10 @@ Public Class FileDownloadFTP
 				"Line: " & Err.Erl & vbCr, "Wystąpił bład",
 				MessageBoxButtons.OK, MessageBoxIcon.Error
 )
-			End
+
 		End Try
 	End Function
+
 
 
 	Function FileDownload()
@@ -230,20 +234,13 @@ Public Class FileDownloadFTP
 			Dim FolderList As New List(Of String)()
 			Dim folderSet As New FolderSetings
 			folderSet.Root = _SavePath & "/" 'Scieżka
-			FolderList.Add("")
-			For Each directory In GetDirectories() 'Pobranie Listy scieżek na serwerze ftp do utworzenie folderów na dysku
-				folderSet.Directory = directory
-				folderSet.CreateFolders() 'Utworzenie folderu
-				FolderList.Add("/" & directory) 'Dodanie do listy folderów
-			Next
+			FolderList.Add("") 'Pobranie plików z Pierwszego folderu FTP
 
-			'Pobranie plików z Pierwszego folderu FTP
 			Using ftpClient As New WebClient()
 				ftpClient.Credentials = New System.Net.NetworkCredential(_Login, _Haslo) 'Logowanie do serwera
-				For Each directory In FolderList 'Pętla po folderach
+				For Each directory In CheckedFolderList 'Pętla po folderach
 					For Each file In GetDirectories(_PathFTP & directory) 'Petla po plikach w folderze
 						If file.Contains(".") Then
-
 							Dim path As String = _PathFTP & directory & AfterDir(file.ToString()) 'Przypisanie ścieżki FTP
 							Dim trnsfrpth As String = _SavePath & directory & AfterDir(file.ToString()) 'Przypisanie scieżki zapisu
 							trnsfrpth = trnsfrpth.Replace("/", "\") 'Zamiana shlashy  
@@ -262,7 +259,7 @@ Public Class FileDownloadFTP
 			"Line: " & Err.Erl & vbCr, "Wystąpił bład",
 			MessageBoxButtons.OK, MessageBoxIcon.Error
 )
-			End
+
 		End Try
 	End Function
 	Function ClearLastChar(SearchWithinThis As String) As String

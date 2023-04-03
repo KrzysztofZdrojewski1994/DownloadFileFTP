@@ -101,6 +101,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InputValidation.vb" />
     <Compile Include="FileDownloadFTP.vb" />
     <Compile Include="FolderSetings.vb" />
     <Compile Include="Form1.vb">
@@ -162,6 +163,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ewidencja.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class FtpTXT
     Inherits System.Windows.Forms.Form
 
     'Formularz przesłania metodę dispose, aby wyczyścić listę składników.
@@ -22,70 +22,294 @@ Partial Class Form1
     'Nie należy modyfikować za pomocą edytora kodu.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FtpTXT))
+        Me.DownloadBtn = New System.Windows.Forms.Button()
+        Me.InstalBtn = New System.Windows.Forms.Button()
+        Me.ErrLbl = New System.Windows.Forms.Label()
+        Me.BtnPanel = New System.Windows.Forms.Panel()
+        Me.SourceListBtn = New System.Windows.Forms.Button()
+        Me.FolderListPanel = New System.Windows.Forms.Panel()
+        Me.TextBoxPanel = New System.Windows.Forms.Panel()
+        Me.TipLabelFtp = New System.Windows.Forms.Label()
+        Me.TipLabelFolder = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.HasloTxt = New System.Windows.Forms.TextBox()
+        Me.LoginTxt = New System.Windows.Forms.TextBox()
+        Me.FolderTxt = New System.Windows.Forms.TextBox()
+        Me.FtpTextbox = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.LoginLbl = New System.Windows.Forms.Label()
+        Me.FolderZapisuDyskLBL = New System.Windows.Forms.Label()
+        Me.ScieżkaFtpLBL = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.BtnPanel.SuspendLayout()
+        Me.TextBoxPanel.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button3
+        'DownloadBtn
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.8!, System.Drawing.FontStyle.Bold)
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button3.Location = New System.Drawing.Point(12, 165)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(517, 233)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Pobierz pliki aktualizacji"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.DownloadBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.DownloadBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.DownloadBtn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DownloadBtn.Dock = System.Windows.Forms.DockStyle.Left
+        Me.DownloadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.DownloadBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.8!, System.Drawing.FontStyle.Bold)
+        Me.DownloadBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.DownloadBtn.Location = New System.Drawing.Point(436, 0)
+        Me.DownloadBtn.MinimumSize = New System.Drawing.Size(333, 113)
+        Me.DownloadBtn.Name = "DownloadBtn"
+        Me.DownloadBtn.Size = New System.Drawing.Size(428, 121)
+        Me.DownloadBtn.TabIndex = 3
+        Me.DownloadBtn.Text = "Pobierz pliki aktualizacji"
+        Me.DownloadBtn.UseVisualStyleBackColor = False
+        Me.DownloadBtn.Visible = False
         '
-        'Button1
+        'InstalBtn
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.8!, System.Drawing.FontStyle.Bold)
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button1.Location = New System.Drawing.Point(535, 165)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(489, 233)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Instalacja aktualizacji"
-        Me.Button1.UseVisualStyleBackColor = False
-        Me.Button1.Visible = False
+        Me.InstalBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.InstalBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.InstalBtn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.InstalBtn.Dock = System.Windows.Forms.DockStyle.Left
+        Me.InstalBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.InstalBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.8!, System.Drawing.FontStyle.Bold)
+        Me.InstalBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.InstalBtn.Location = New System.Drawing.Point(0, 0)
+        Me.InstalBtn.MinimumSize = New System.Drawing.Size(333, 113)
+        Me.InstalBtn.Name = "InstalBtn"
+        Me.InstalBtn.Size = New System.Drawing.Size(436, 121)
+        Me.InstalBtn.TabIndex = 4
+        Me.InstalBtn.Text = "Instalacja aktualizacji"
+        Me.InstalBtn.UseVisualStyleBackColor = False
+        Me.InstalBtn.Visible = False
         '
-        'Label1
+        'ErrLbl
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!)
-        Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(9, 58)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(423, 29)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Trwa pobieranie plików do aktualizacji"
-        Me.Label1.Visible = False
+        Me.ErrLbl.AutoSize = True
+        Me.ErrLbl.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ErrLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!)
+        Me.ErrLbl.ForeColor = System.Drawing.Color.Red
+        Me.ErrLbl.Location = New System.Drawing.Point(0, 0)
+        Me.ErrLbl.Name = "ErrLbl"
+        Me.ErrLbl.Size = New System.Drawing.Size(0, 29)
+        Me.ErrLbl.TabIndex = 5
         '
-        'Form1
+        'BtnPanel
+        '
+        Me.BtnPanel.Controls.Add(Me.SourceListBtn)
+        Me.BtnPanel.Controls.Add(Me.DownloadBtn)
+        Me.BtnPanel.Controls.Add(Me.InstalBtn)
+        Me.BtnPanel.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BtnPanel.Location = New System.Drawing.Point(0, 126)
+        Me.BtnPanel.Name = "BtnPanel"
+        Me.BtnPanel.Size = New System.Drawing.Size(1036, 121)
+        Me.BtnPanel.TabIndex = 6
+        '
+        'SourceListBtn
+        '
+        Me.SourceListBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(115, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(174, Byte), Integer))
+        Me.SourceListBtn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SourceListBtn.Dock = System.Windows.Forms.DockStyle.Left
+        Me.SourceListBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.SourceListBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.8!, System.Drawing.FontStyle.Bold)
+        Me.SourceListBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.SourceListBtn.Location = New System.Drawing.Point(864, 0)
+        Me.SourceListBtn.MinimumSize = New System.Drawing.Size(333, 113)
+        Me.SourceListBtn.Name = "SourceListBtn"
+        Me.SourceListBtn.Size = New System.Drawing.Size(424, 121)
+        Me.SourceListBtn.TabIndex = 0
+        Me.SourceListBtn.Text = "Wybierz listę plików"
+        Me.SourceListBtn.UseVisualStyleBackColor = False
+        '
+        'FolderListPanel
+        '
+        Me.FolderListPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.FolderListPanel.Location = New System.Drawing.Point(0, 33)
+        Me.FolderListPanel.Name = "FolderListPanel"
+        Me.FolderListPanel.Size = New System.Drawing.Size(1036, 469)
+        Me.FolderListPanel.TabIndex = 7
+        '
+        'TextBoxPanel
+        '
+        Me.TextBoxPanel.Controls.Add(Me.TipLabelFtp)
+        Me.TextBoxPanel.Controls.Add(Me.TipLabelFolder)
+        Me.TextBoxPanel.Controls.Add(Me.Label3)
+        Me.TextBoxPanel.Controls.Add(Me.Label2)
+        Me.TextBoxPanel.Controls.Add(Me.HasloTxt)
+        Me.TextBoxPanel.Controls.Add(Me.LoginTxt)
+        Me.TextBoxPanel.Controls.Add(Me.FolderTxt)
+        Me.TextBoxPanel.Controls.Add(Me.FtpTextbox)
+        Me.TextBoxPanel.Controls.Add(Me.Label5)
+        Me.TextBoxPanel.Controls.Add(Me.LoginLbl)
+        Me.TextBoxPanel.Controls.Add(Me.FolderZapisuDyskLBL)
+        Me.TextBoxPanel.Controls.Add(Me.ScieżkaFtpLBL)
+        Me.TextBoxPanel.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TextBoxPanel.Location = New System.Drawing.Point(0, 0)
+        Me.TextBoxPanel.Name = "TextBoxPanel"
+        Me.TextBoxPanel.Size = New System.Drawing.Size(1036, 120)
+        Me.TextBoxPanel.TabIndex = 8
+        '
+        'TipLabelFtp
+        '
+        Me.TipLabelFtp.AutoSize = True
+        Me.TipLabelFtp.BackColor = System.Drawing.SystemColors.Window
+        Me.TipLabelFtp.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.TipLabelFtp.Location = New System.Drawing.Point(12, 85)
+        Me.TipLabelFtp.Name = "TipLabelFtp"
+        Me.TipLabelFtp.Size = New System.Drawing.Size(569, 21)
+        Me.TipLabelFtp.TabIndex = 10
+        Me.TipLabelFtp.Text = "Uzupełnij scieżke do folderu FTP np. ftp://Nazwa_serwera.pl/FolderPliki"
+        '
+        'TipLabelFolder
+        '
+        Me.TipLabelFolder.AutoSize = True
+        Me.TipLabelFolder.BackColor = System.Drawing.SystemColors.Window
+        Me.TipLabelFolder.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.TipLabelFolder.Location = New System.Drawing.Point(12, 31)
+        Me.TipLabelFolder.Name = "TipLabelFolder"
+        Me.TipLabelFolder.Size = New System.Drawing.Size(611, 21)
+        Me.TipLabelFolder.TabIndex = 9
+        Me.TipLabelFolder.Text = "Uzupełnij scieżke do folderu zapisu na dysku np. C:\Program Files\MojFolder"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!, System.Drawing.FontStyle.Bold)
+        Me.Label3.Location = New System.Drawing.Point(986, 2)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(28, 25)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "◎"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!, System.Drawing.FontStyle.Bold)
+        Me.Label2.Location = New System.Drawing.Point(986, 58)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(28, 25)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "◎"
+        '
+        'HasloTxt
+        '
+        Me.HasloTxt.Location = New System.Drawing.Point(687, 85)
+        Me.HasloTxt.Name = "HasloTxt"
+        Me.HasloTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.HasloTxt.Size = New System.Drawing.Size(328, 22)
+        Me.HasloTxt.TabIndex = 7
+        '
+        'LoginTxt
+        '
+        Me.LoginTxt.Location = New System.Drawing.Point(687, 31)
+        Me.LoginTxt.Name = "LoginTxt"
+        Me.LoginTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.LoginTxt.Size = New System.Drawing.Size(328, 22)
+        Me.LoginTxt.TabIndex = 6
+        '
+        'FolderTxt
+        '
+        Me.FolderTxt.Location = New System.Drawing.Point(3, 31)
+        Me.FolderTxt.Name = "FolderTxt"
+        Me.FolderTxt.Size = New System.Drawing.Size(675, 22)
+        Me.FolderTxt.TabIndex = 5
+        '
+        'FtpTextbox
+        '
+        Me.FtpTextbox.Location = New System.Drawing.Point(3, 85)
+        Me.FtpTextbox.Name = "FtpTextbox"
+        Me.FtpTextbox.Size = New System.Drawing.Size(675, 22)
+        Me.FtpTextbox.TabIndex = 4
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(684, 65)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(48, 17)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Haslo:"
+        '
+        'LoginLbl
+        '
+        Me.LoginLbl.AutoSize = True
+        Me.LoginLbl.Location = New System.Drawing.Point(684, 11)
+        Me.LoginLbl.Name = "LoginLbl"
+        Me.LoginLbl.Size = New System.Drawing.Size(47, 17)
+        Me.LoginLbl.TabIndex = 2
+        Me.LoginLbl.Text = "Login:"
+        '
+        'FolderZapisuDyskLBL
+        '
+        Me.FolderZapisuDyskLBL.AutoSize = True
+        Me.FolderZapisuDyskLBL.Location = New System.Drawing.Point(3, 11)
+        Me.FolderZapisuDyskLBL.Name = "FolderZapisuDyskLBL"
+        Me.FolderZapisuDyskLBL.Size = New System.Drawing.Size(158, 17)
+        Me.FolderZapisuDyskLBL.TabIndex = 1
+        Me.FolderZapisuDyskLBL.Text = "Folder zapisu na dysku:"
+        '
+        'ScieżkaFtpLBL
+        '
+        Me.ScieżkaFtpLBL.AutoSize = True
+        Me.ScieżkaFtpLBL.Location = New System.Drawing.Point(3, 65)
+        Me.ScieżkaFtpLBL.Name = "ScieżkaFtpLBL"
+        Me.ScieżkaFtpLBL.Size = New System.Drawing.Size(105, 17)
+        Me.ScieżkaFtpLBL.TabIndex = 0
+        Me.ScieżkaFtpLBL.Text = "Scieżka do Ftp:"
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.TextBoxPanel)
+        Me.Panel3.Controls.Add(Me.BtnPanel)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel3.Location = New System.Drawing.Point(0, 528)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1036, 247)
+        Me.Panel3.TabIndex = 8
+        '
+        'FtpTXT
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1036, 453)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button3)
-        Me.Name = "Form1"
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1036, 775)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.FolderListPanel)
+        Me.Controls.Add(Me.ErrLbl)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "FtpTXT"
         Me.Text = "Aktualizacja"
+        Me.BtnPanel.ResumeLayout(False)
+        Me.TextBoxPanel.ResumeLayout(False)
+        Me.TextBoxPanel.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents DownloadBtn As Button
+    Friend WithEvents InstalBtn As Button
+    Friend WithEvents ErrLbl As Label
+    Friend WithEvents BtnPanel As Panel
+    Friend WithEvents FolderListPanel As Panel
+    Friend WithEvents SourceListBtn As Button
+    Friend WithEvents TextBoxPanel As Panel
+    Friend WithEvents HasloTxt As TextBox
+    Friend WithEvents LoginTxt As TextBox
+    Friend WithEvents FolderTxt As TextBox
+    Friend WithEvents FtpTextbox As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents LoginLbl As Label
+    Friend WithEvents FolderZapisuDyskLBL As Label
+    Friend WithEvents ScieżkaFtpLBL As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TipLabelFolder As Label
+    Friend WithEvents TipLabelFtp As Label
 End Class
