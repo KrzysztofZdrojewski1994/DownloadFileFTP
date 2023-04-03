@@ -32,7 +32,7 @@
 
             FtpSet.FileDownload()
             ErrLbl.Text = "Pobrano pliki instalacyjne - kliknij przycisk by rozpocząć instalacje aktualizacji"
-            ErrLbl.ForeColor = Color.Green
+            ErrLbl.ForeColor = Color.FromArgb(1, 0, 197, 144)
             Cursor = Cursors.Default
             DownloadBtn.BackColor = Color.FromArgb(0, 82, 165)
             InstalBtn.Visible = True
@@ -104,7 +104,10 @@
                     .Location = New Point(10, 25 * Position),
                     .Height = 23,
                     .Width = 2200,
-                    .Checked = True
+                    .Checked = True,
+                    .ForeColor = Color.FromArgb(1, 255, 255, 255),
+                    .Cursor = Cursors.Hand,
+                    .Font = New System.Drawing.Font("Arial", 10, FontStyle.Bold)
                 }
                 FolderListPanel.Controls.Add(MyCheckbox)
                 Position += 1
@@ -112,7 +115,7 @@
 
             SourceListBtn.BackColor = Color.FromArgb(0, 82, 165)
             ErrLbl.Text = "Wybierz ścieżki z których chcesz pobrać pliki"
-            ErrLbl.ForeColor = Color.Green
+            ErrLbl.ForeColor = Color.FromArgb(1, 0, 197, 144)
             DownloadBtn.Visible = True
         Catch ex As Exception
             MessageBox.Show(
@@ -165,4 +168,7 @@
         FtpTextbox.Focus()
         TipLabelFtp.Visible = False
     End Sub
+
+
+
 End Class

@@ -42,10 +42,10 @@ Partial Class FtpTXT
         Me.LoginLbl = New System.Windows.Forms.Label()
         Me.FolderZapisuDyskLBL = New System.Windows.Forms.Label()
         Me.ScieżkaFtpLBL = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.BtnBoxPanel = New System.Windows.Forms.Panel()
         Me.BtnPanel.SuspendLayout()
         Me.TextBoxPanel.SuspendLayout()
-        Me.Panel3.SuspendLayout()
+        Me.BtnBoxPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'DownloadBtn
@@ -68,7 +68,7 @@ Partial Class FtpTXT
         '
         'InstalBtn
         '
-        Me.InstalBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.InstalBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(144, Byte), Integer))
         Me.InstalBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.InstalBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.InstalBtn.Dock = System.Windows.Forms.DockStyle.Left
@@ -88,7 +88,7 @@ Partial Class FtpTXT
         '
         Me.ErrLbl.AutoSize = True
         Me.ErrLbl.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ErrLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!)
+        Me.ErrLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold)
         Me.ErrLbl.ForeColor = System.Drawing.Color.Red
         Me.ErrLbl.Location = New System.Drawing.Point(0, 0)
         Me.ErrLbl.Name = "ErrLbl"
@@ -101,14 +101,14 @@ Partial Class FtpTXT
         Me.BtnPanel.Controls.Add(Me.DownloadBtn)
         Me.BtnPanel.Controls.Add(Me.InstalBtn)
         Me.BtnPanel.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BtnPanel.Location = New System.Drawing.Point(0, 126)
+        Me.BtnPanel.Location = New System.Drawing.Point(0, 158)
         Me.BtnPanel.Name = "BtnPanel"
-        Me.BtnPanel.Size = New System.Drawing.Size(1036, 121)
+        Me.BtnPanel.Size = New System.Drawing.Size(1630, 121)
         Me.BtnPanel.TabIndex = 6
         '
         'SourceListBtn
         '
-        Me.SourceListBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(115, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(174, Byte), Integer))
+        Me.SourceListBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(144, Byte), Integer))
         Me.SourceListBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SourceListBtn.Dock = System.Windows.Forms.DockStyle.Left
         Me.SourceListBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
@@ -124,10 +124,10 @@ Partial Class FtpTXT
         '
         'FolderListPanel
         '
-        Me.FolderListPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.FolderListPanel.Location = New System.Drawing.Point(0, 33)
+        Me.FolderListPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.FolderListPanel.Location = New System.Drawing.Point(5, 32)
         Me.FolderListPanel.Name = "FolderListPanel"
-        Me.FolderListPanel.Size = New System.Drawing.Size(1036, 469)
+        Me.FolderListPanel.Size = New System.Drawing.Size(1613, 686)
         Me.FolderListPanel.TabIndex = 7
         '
         'TextBoxPanel
@@ -144,10 +144,11 @@ Partial Class FtpTXT
         Me.TextBoxPanel.Controls.Add(Me.LoginLbl)
         Me.TextBoxPanel.Controls.Add(Me.FolderZapisuDyskLBL)
         Me.TextBoxPanel.Controls.Add(Me.ScieżkaFtpLBL)
-        Me.TextBoxPanel.Dock = System.Windows.Forms.DockStyle.Top
-        Me.TextBoxPanel.Location = New System.Drawing.Point(0, 0)
+        Me.TextBoxPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.TextBoxPanel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TextBoxPanel.Location = New System.Drawing.Point(0, 3)
         Me.TextBoxPanel.Name = "TextBoxPanel"
-        Me.TextBoxPanel.Size = New System.Drawing.Size(1036, 120)
+        Me.TextBoxPanel.Size = New System.Drawing.Size(1283, 144)
         Me.TextBoxPanel.TabIndex = 8
         '
         'TipLabelFtp
@@ -157,7 +158,7 @@ Partial Class FtpTXT
         Me.TipLabelFtp.ForeColor = System.Drawing.SystemColors.ButtonShadow
         Me.TipLabelFtp.Location = New System.Drawing.Point(12, 85)
         Me.TipLabelFtp.Name = "TipLabelFtp"
-        Me.TipLabelFtp.Size = New System.Drawing.Size(569, 21)
+        Me.TipLabelFtp.Size = New System.Drawing.Size(526, 17)
         Me.TipLabelFtp.TabIndex = 10
         Me.TipLabelFtp.Text = "Uzupełnij scieżke do folderu FTP np. ftp://Nazwa_serwera.pl/FolderPliki"
         '
@@ -168,7 +169,7 @@ Partial Class FtpTXT
         Me.TipLabelFolder.ForeColor = System.Drawing.SystemColors.ButtonShadow
         Me.TipLabelFolder.Location = New System.Drawing.Point(12, 31)
         Me.TipLabelFolder.Name = "TipLabelFolder"
-        Me.TipLabelFolder.Size = New System.Drawing.Size(611, 21)
+        Me.TipLabelFolder.Size = New System.Drawing.Size(564, 17)
         Me.TipLabelFolder.TabIndex = 9
         Me.TipLabelFolder.Text = "Uzupełnij scieżke do folderu zapisu na dysku np. C:\Program Files\MojFolder"
         '
@@ -229,65 +230,74 @@ Partial Class FtpTXT
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label5.Location = New System.Drawing.Point(684, 65)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 17)
+        Me.Label5.Size = New System.Drawing.Size(54, 17)
         Me.Label5.TabIndex = 3
         Me.Label5.Text = "Haslo:"
         '
         'LoginLbl
         '
         Me.LoginLbl.AutoSize = True
+        Me.LoginLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.LoginLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.LoginLbl.Location = New System.Drawing.Point(684, 11)
         Me.LoginLbl.Name = "LoginLbl"
-        Me.LoginLbl.Size = New System.Drawing.Size(47, 17)
+        Me.LoginLbl.Size = New System.Drawing.Size(53, 17)
         Me.LoginLbl.TabIndex = 2
         Me.LoginLbl.Text = "Login:"
         '
         'FolderZapisuDyskLBL
         '
         Me.FolderZapisuDyskLBL.AutoSize = True
+        Me.FolderZapisuDyskLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.FolderZapisuDyskLBL.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.FolderZapisuDyskLBL.Location = New System.Drawing.Point(3, 11)
         Me.FolderZapisuDyskLBL.Name = "FolderZapisuDyskLBL"
-        Me.FolderZapisuDyskLBL.Size = New System.Drawing.Size(158, 17)
+        Me.FolderZapisuDyskLBL.Size = New System.Drawing.Size(181, 17)
         Me.FolderZapisuDyskLBL.TabIndex = 1
         Me.FolderZapisuDyskLBL.Text = "Folder zapisu na dysku:"
         '
         'ScieżkaFtpLBL
         '
         Me.ScieżkaFtpLBL.AutoSize = True
+        Me.ScieżkaFtpLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.ScieżkaFtpLBL.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ScieżkaFtpLBL.Location = New System.Drawing.Point(3, 65)
         Me.ScieżkaFtpLBL.Name = "ScieżkaFtpLBL"
-        Me.ScieżkaFtpLBL.Size = New System.Drawing.Size(105, 17)
+        Me.ScieżkaFtpLBL.Size = New System.Drawing.Size(120, 17)
         Me.ScieżkaFtpLBL.TabIndex = 0
         Me.ScieżkaFtpLBL.Text = "Scieżka do Ftp:"
         '
-        'Panel3
+        'BtnBoxPanel
         '
-        Me.Panel3.Controls.Add(Me.TextBoxPanel)
-        Me.Panel3.Controls.Add(Me.BtnPanel)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel3.Location = New System.Drawing.Point(0, 528)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1036, 247)
-        Me.Panel3.TabIndex = 8
+        Me.BtnBoxPanel.Controls.Add(Me.TextBoxPanel)
+        Me.BtnBoxPanel.Controls.Add(Me.BtnPanel)
+        Me.BtnBoxPanel.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BtnBoxPanel.Location = New System.Drawing.Point(0, 1046)
+        Me.BtnBoxPanel.Name = "BtnBoxPanel"
+        Me.BtnBoxPanel.Size = New System.Drawing.Size(1630, 279)
+        Me.BtnBoxPanel.TabIndex = 8
         '
         'FtpTXT
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1036, 775)
-        Me.Controls.Add(Me.Panel3)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1630, 1325)
+        Me.Controls.Add(Me.BtnBoxPanel)
         Me.Controls.Add(Me.FolderListPanel)
         Me.Controls.Add(Me.ErrLbl)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MinimumSize = New System.Drawing.Size(1300, 1000)
         Me.Name = "FtpTXT"
         Me.Text = "Aktualizacja"
         Me.BtnPanel.ResumeLayout(False)
         Me.TextBoxPanel.ResumeLayout(False)
         Me.TextBoxPanel.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
+        Me.BtnBoxPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -307,7 +317,7 @@ Partial Class FtpTXT
     Friend WithEvents LoginLbl As Label
     Friend WithEvents FolderZapisuDyskLBL As Label
     Friend WithEvents ScieżkaFtpLBL As Label
-    Friend WithEvents Panel3 As Panel
+    Friend WithEvents BtnBoxPanel As Panel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents TipLabelFolder As Label
