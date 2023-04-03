@@ -69,10 +69,7 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
-        FtpTextbox.Text = "ftp://pliki.inwemer.pl/Logowanie"
-        LoginTxt.Text = "msaccess"
-        HasloTxt.Text = "TBF49$#1ksXq2A"
-        FolderTxt.Text = "C:\Program Files\Koordynator\Logowanie"
+
 
 
     End Sub
